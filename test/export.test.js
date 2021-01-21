@@ -28,11 +28,19 @@ describe('transform export', () => {
   it('should default exports', () => {
     code = transform(`export default true`);
     expect(code).toMatchSnapshot();
+    code = transform(`const name = 1; export default name;`);
+    expect(code).toMatchSnapshot();
     code = transform(`export default function () {  }`);
     expect(code).toMatchSnapshot();
     code = transform(`export default function name1() {  }`);
     expect(code).toMatchSnapshot();
     code = transform(`export default class ClassName {}`);
+    expect(code).toMatchSnapshot();
+    code = transform(`export default Page({});`);
+    expect(code).toMatchSnapshot();
+    code = transform(`export default new Page({});`);
+    expect(code).toMatchSnapshot();
+    code = transform(`export default {};`);
     expect(code).toMatchSnapshot();
   });
 
