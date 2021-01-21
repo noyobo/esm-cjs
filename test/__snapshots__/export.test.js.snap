@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`transform export should aggregating modules 1`] = `"Not support export aggregating modules"`;
+
 exports[`transform export should default exports 1`] = `
 "const _default = true;
 exports.default = _default;"
@@ -62,74 +64,6 @@ exports.ClassName = ClassName;"
 `;
 
 exports[`transform export should renaming exports 1`] = `
-"var variable1 = 1;
-var variable2 = 2;
-exports.name1 = variable1;
-exports.name2 = variable2;"
-`;
-
-exports[`transform import should default exports 1`] = `
-"const _default = true;
-exports.default = _default;"
-`;
-
-exports[`transform import should default exports 2`] = `
-"function _default() {}
-
-exports.default = _default;"
-`;
-
-exports[`transform import should default exports 3`] = `
-"function name1() {}
-
-exports.default = name1;"
-`;
-
-exports[`transform import should default exports 4`] = `
-"class ClassName {}
-
-exports.default = ClassName;"
-`;
-
-exports[`transform import should export list 1`] = `
-"const a = 1;
-const b = 2;
-exports.a = a;
-exports.b = b;"
-`;
-
-exports[`transform import should exporting individual features 1`] = `
-"let a, b, c;
-exports.a = a;
-exports.b = b;
-exports.c = c;"
-`;
-
-exports[`transform import should exporting individual features 2`] = `
-"let a = 1,
-    b = 2,
-    c = 3;
-exports.a = a;
-exports.b = b;
-exports.c = c;"
-`;
-
-exports[`transform import should exporting individual features 3`] = `
-"function foo() {
-  /**/
-}
-
-exports.foo = foo;
-;"
-`;
-
-exports[`transform import should exporting individual features 4`] = `
-"class ClassName {}
-
-exports.ClassName = ClassName;"
-`;
-
-exports[`transform import should renaming exports 1`] = `
 "var variable1 = 1;
 var variable2 = 2;
 exports.name1 = variable1;
