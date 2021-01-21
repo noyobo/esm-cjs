@@ -1,12 +1,15 @@
 {
   "name": "esm-cjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transform ESM to Common JS for present NodeJS, without any junk wrappers or useless renaming.",
   "main": "index.js",
   "bin": {
     "ej": "./bin/cli.js"
   },
-  "files": ["lib/", "bin"],
+  "files": [
+    "lib/",
+    "bin"
+  ],
   "repository": "git@github.com:noyobo/esm-cjs.git",
   "author": "noyobo <noyobo@gmail.com>",
   "license": "MIT",
