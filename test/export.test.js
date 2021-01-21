@@ -5,6 +5,8 @@ describe('transform export', () => {
   it('should exporting individual features', () => {
     code = transform(`export let a, b, c;`);
     expect(code).toMatchSnapshot();
+    code = transform(`export let a = 1;`);
+    expect(code).toMatchSnapshot();
     code = transform(`export let a = 1, b = 2, c = 3;`);
     expect(code).toMatchSnapshot();
     code = transform(`export function foo(){ /**/ };`);

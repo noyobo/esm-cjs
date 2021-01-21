@@ -40,6 +40,11 @@ exports.c = c;"
 `;
 
 exports[`transform export should exporting individual features 2`] = `
+"let a = 1;
+exports.a = a;"
+`;
+
+exports[`transform export should exporting individual features 3`] = `
 "let a = 1,
     b = 2,
     c = 3;
@@ -48,7 +53,7 @@ exports.b = b;
 exports.c = c;"
 `;
 
-exports[`transform export should exporting individual features 3`] = `
+exports[`transform export should exporting individual features 4`] = `
 "function foo() {
   /**/
 }
@@ -57,7 +62,7 @@ exports.foo = foo;
 ;"
 `;
 
-exports[`transform export should exporting individual features 4`] = `
+exports[`transform export should exporting individual features 5`] = `
 "class ClassName {}
 
 exports.ClassName = ClassName;"
