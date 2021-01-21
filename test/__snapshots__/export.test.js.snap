@@ -4,48 +4,48 @@ exports[`transform export should aggregating modules 1`] = `"Not support export 
 
 exports[`transform export should default exports 1`] = `
 "const _default = true;
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should default exports 2`] = `
 "const name = 1;
 const _default = name;
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should default exports 3`] = `
 "function _default() {}
 
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should default exports 4`] = `
 "function name1() {}
 
-exports.default = name1;"
+module.exports = name1;"
 `;
 
 exports[`transform export should default exports 5`] = `
 "class ClassName {}
 
-exports.default = ClassName;"
+module.exports = ClassName;"
 `;
 
 exports[`transform export should default exports 6`] = `
 "const _default = Page({});
 
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should default exports 7`] = `
 "const _default = new Page({});
 
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should default exports 8`] = `
 "const _default = {};
-exports.default = _default;"
+module.exports = _default;"
 `;
 
 exports[`transform export should export list 1`] = `

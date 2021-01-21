@@ -16,6 +16,13 @@ const output = esm2cjs(input);
 // const { bar }  = require('foo');
 ```
 
+## Command line
+
+```bash
+ej --help
+ej ./**/*.js --write
+```
+
 ## TODO
 
 - [ ] Aggregating modules
