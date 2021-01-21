@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transform import should default import 1`] = `"const foo = require('foo');"`;
+
+exports[`transform import should import members 1`] = `
+"const _foo = require('foo');
+
+const a = _foo.a;
+const b = _foo.b;
+const c = _foo.c;"
+`;
+
+exports[`transform import should import members alias 1`] = `
+"const _foo = require('foo');
+
+const d = _foo.a;
+const e = _foo.b;
+const c = _foo.c;"
+`;
+
+exports[`transform import should import members and default 1`] = `
+"const d = require('foo');
+
+const a = d.a;
+const b = d.b;
+const c = d.c;"
+`;
+
+exports[`transform import should star import 1`] = `"const foo = require('foo');"`;
