@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transform import case1 should work 1`] = `
+"const _chunkODN36SKUJs = require('../../chunk-ODN36SKU.js');
+
+const __toModule = _chunkODN36SKUJs.__toModule;
+const require_es = _chunkODN36SKUJs.require_es;
+
+var import_miniapp_ast2vnode = __toModule(require_es());
+
+var sjsModules = {};
+var templateMethods = {};
+var includeModules = {};
+var ast2VNode = new import_miniapp_ast2vnode.default({
+  templateMethods,
+  sjsModules,
+  includeModules
+});
+
+function root(data) {
+  this.sjsModules = sjsModules;
+  let vnode = ast2VNode.makeMix({
+    children: [{
+      type: \\"node\\",
+      name: \\"view\\",
+      attributes: {
+        class: \\"foo\\"
+      },
+      children: [{
+        exps: [\\"key\\"],
+        expression: 'ty.key+(\\"组件\\")'
+      }]
+    }]
+  }, data);
+  return vnode;
+}
+
+exports.default = root;
+exports.templateMethods = templateMethods;"
+`;
