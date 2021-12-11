@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transform import case1 should work 1`] = `
+"const _chunkSTXT7BRDJs = require('../../../../chunk-STXT7BRD.js');
+
+const root = _chunkSTXT7BRDJs.root;
+const templateMethods = _chunkSTXT7BRDJs.templateMethods;
+
+require('../../../../chunk-UN2MHHJ5.js');
+
+exports.default = root;
+exports.templateMethods = templateMethods;"
+`;
