@@ -21,7 +21,7 @@
     "@babel/traverse": "^7.12.12",
     "@babel/types": "^7.12.12",
     "colors": "^1.4.0",
-    "fs-extra": "^9.1.0",
+    "fs-extra": "^10.0.0",
     "globby": "^11.0.2",
     "meow": "^9.0.0",
     "signale": "^1.4.0"
